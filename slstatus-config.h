@@ -67,8 +67,8 @@ static const struct arg args[] = {
 	/* function format          argument */
     { netspeed_rx,  "%s:",   "wlp0s20f0u9u4" },
     { netspeed_tx,  "%s",   "wlp0s20f0u9u4" },
-    { run_command,  " R%s ",   "free -h | awk '/^Mem/ {print $3}' | sed s/i//g "},
-    { vol_perc, "V%s ", "/dev/mixer"},
+    { run_command,  " %s ",   "free -h | awk '/^Mem/ {print $3}' | sed s/i//g "},
+    { run_command, "V%s ", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
     { temp, "%sC ", "/sys/class/thermal/thermal_zone1/temp" },
 	{ datetime, "%s",           "%a %b%d %R" },
 };

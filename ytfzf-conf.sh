@@ -1,3 +1,5 @@
+# .config/ytfzf/conf.sh
+
 yt_video_link_domain="https://youtube.com"
 is_sort="1"
 video_pref="720"
