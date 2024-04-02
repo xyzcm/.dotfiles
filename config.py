@@ -2502,6 +2502,6 @@ c.zoom.default = '125%'
 
 ## Bindings for normal mode
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
-config.bind(',', 'hint links spawn --detach mpv {hint-url}')
+config.bind(',', 'hint links spawn mpv {hint-url}')
 config.bind('.', 'hint links spawn st -e yt-dlp {hint-url}')
 

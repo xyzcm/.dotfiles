@@ -65,8 +65,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { netspeed_rx,  "%s:",   "wlp0s20f0u9u4" },
-    { netspeed_tx,  "%s",   "wlp0s20f0u9u4" },
+    { netspeed_rx,  "%s:",   "wlan0" },
+    { netspeed_tx,  "%s",   "wlan0" },
     { run_command,  " %s ",   "free -h | awk '/^Mem/ {print $3}' | sed s/i//g "},
     { run_command, "V%s ", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
     { temp, "%sC ", "/sys/class/thermal/thermal_zone1/temp" },
