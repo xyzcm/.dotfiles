@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 #alias ??='YTFZF_EXTMENU_LEN=250 ytfzf -D '
 alias ??='ytfzf '
-alias vim=nvim
+alias v=nvim
 
 # w3m-ddg
 ?() { w3m https://lite.duckduckgo.com/lite/?q="$*"; }
