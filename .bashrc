@@ -7,16 +7,14 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-#alias ??='YTFZF_EXTMENU_LEN=250 ytfzf -D '
-alias ??='ytfzf '
-alias v=nvim
-
-# w3m-ddg
-?() { w3m https://lite.duckduckgo.com/lite/?q="$*"; }
-
-# lynx-ddg pure HTML
-ll() { lynx https://lite.duckduckgo.com/html/?q="$*"; }
-
 #PS1='[\u@\h \W]\$ '
-#PS1='\h \W\$ '
-PS1='\W \$ '
+PS1='\W $ '
+
+alias v=nvim
+alias ??="ytfzf "
+#alias ??='YTFZF_EXTMENU_LEN=250 ytfzf -D '
+alias tsm="transmission-remote"
+alias n="nnn -de"
+
+?() { w3m https://lite.duckduckgo.com/lite/?q="$*"; }
+ll() { lynx https://lite.duckduckgo.com/html/?q="$*"; }

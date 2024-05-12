@@ -6,6 +6,8 @@ vim.g.have_nerd_font = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+vim.opt.clipboard = "unnamedplus"
+
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2

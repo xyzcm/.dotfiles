@@ -22,15 +22,14 @@ return {
           end,
         },
         window = {
-          completion = cmp.config.window.bordered(),
-					documentation = cmp.config.window.bordered(),
-
-          --[[ completion = {
-            border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-          },
-          documentation = {
-            border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-          }, ]]
+          completion = cmp.config.window.bordered({
+            -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+          border = "single",
+          }),
+					documentation = cmp.config.window.bordered({
+            -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+          border = "single",
+          }),
         },
         mapping = cmp.mapping.preset.insert({
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),

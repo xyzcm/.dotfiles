@@ -3,7 +3,6 @@ return {
 	lazy = false,
 	config = function()
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		-- Setup language servers.
 		local lspconfig = require("lspconfig")
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
@@ -14,7 +13,7 @@ return {
 		lspconfig.cssls.setup({
 			capabilities = capabilities,
 		})
-		-- Server-specific settings. See `:help lspconfig-setup`
+
 		lspconfig.html.setup({
 			capabilities = capabilities,
 		})
