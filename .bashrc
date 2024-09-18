@@ -7,14 +7,25 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-#PS1='[\u@\h \W]\$ '
 PS1='\W $ '
 
-alias v=nvim
-alias ??="ytfzf "
-#alias ??='YTFZF_EXTMENU_LEN=250 ytfzf -D '
-alias tsm="transmission-remote"
-alias n="nnn -de"
+# Environment
+export TERM="st-256color"
+export SHELL=/bin/bash
+export EDITOR=nvim
+export SUDO_EDITOR=nvim
+export SUDO_EDITOR=/usr/bin/nvim
+export VISUAL=nvim
+export TERMINAL=st
 
+# alias
+alias x=exit
+alias b=brightness
+alias vifmrun=~/.config/vifm/scripts/vifmrun
+alias outto='loginctl terminate-user jong'
+alias rboot='sudo reboot'
+alias off='sudo poweroff'
+
+# terminal browsers
 ?() { w3m https://lite.duckduckgo.com/lite/?q="$*"; }
 ll() { lynx https://lite.duckduckgo.com/html/?q="$*"; }
