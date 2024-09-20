@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { import = "xyz.plugins" },
+    { import = "c0de2.plugins" },
   },
   ui = {
     -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },

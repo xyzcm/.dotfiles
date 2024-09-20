@@ -138,11 +138,12 @@ return {
       set_mark('w', vim.fn.getcwd, 'Working directory') -- callable
       set_mark('h', '~', 'Home directory')
       set_mark('n', '~/.config/nvim', 'Neovim config')
-      set_mark('g', '~/.config/nvim/lua/xyz/plugins', 'Neovim plugins config')
+      set_mark('g', '~/.config/nvim/lua/c0de2/plugins', 'Neovim plugins config')
       set_mark('z', '~/.config/vifm', 'Vifm config')
-      set_mark('s', '~/.local/src', 'Suckless config')
+      set_mark('s', '~/suckless', 'Suckless config')
       set_mark('d', '~/Downloads', 'Downloads')
-      set_mark('c', '~/Documents', 'Downloads')
+      set_mark('e', '~/Documents', 'Documents')
+      set_mark('c', '~/.config', 'Config files')
       set_mark('t', '~/.local/share/nvim/mini.files/trash', 'MiniFiles trash folder')
       set_mark('T', '~/.local/share/Trash/files', 'Vifm trash folder')
     end,
